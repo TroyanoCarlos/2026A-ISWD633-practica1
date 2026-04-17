@@ -11,9 +11,14 @@ docker run -d --name <nombre contenedor> -p <puerto host>:<puerto contenedor> <n
 
 ```
 Crear un contenedor a partir de la imagen nginx version alpine con el mapeo de puertos del ejemplo gráfico, host 3000 y contenedor 80
+<img width="817" height="88" alt="image" src="https://github.com/user-attachments/assets/1d0d392e-7566-4e7c-bf07-c3f82ebc6108" />
+
 # COMPLETAR
 
 # COLOCAR UNA CAPTURA DE PANTALLA  DEL ACCESO http://localhost:3000
+
+<img width="1876" height="968" alt="image" src="https://github.com/user-attachments/assets/3f2a5e70-d6eb-4232-86f5-4cb22b635d5a" />
+
 
 ### Para mapear más de un puerto
 
@@ -22,6 +27,9 @@ docker run -d --name <nombre contenedor> -p <puerto host 01>:<puerto contenedor 
 ```
 
 Crear un contenedor a partir de la imagen rabbitmq version management-alpine, para este mapeo de puertos usar en el host los mismos puertos del contenedor.
+
+<img width="1013" height="458" alt="image" src="https://github.com/user-attachments/assets/10713a37-511b-42b4-98aa-4533afad4aee" />
+
 # COMPLETAR
 
 ### Usando una forma más semántica cuando se especifican puertos
@@ -43,9 +51,17 @@ No puedes mapear puertos a un contenedor existente directamente después de su c
 # COMPLETAR
 
 # COLOCAR UNA CAPTURA DE PANTALLA  DEL ACCESO http://localhost:8080
+<img width="1912" height="955" alt="image" src="https://github.com/user-attachments/assets/486aa0f7-84b5-45a3-82f6-0f7f04cb0d1a" />
+
 
 ### ¿Cómo obtener la contraseña solicitada?
 Para obtener la contraseña solicitada es necesario ingresar al contenedor.
 
 ![Imagen](jenkins.PNG)
+
+
+<img width="1140" height="509" alt="image" src="https://github.com/user-attachments/assets/49977872-23e7-4ffb-a315-900d7fe42b36" />
+
+<img width="1730" height="948" alt="image" src="https://github.com/user-attachments/assets/5a568b86-b7c9-45a6-b99f-bedf241fd1eb" />
+
 
