@@ -6,10 +6,19 @@ docker exec <nombre contenedor> <comando> <argumentos opcionales>
 ```
 # COMPLETAR
 ### ¿Para qué se usa el comando ls?
+
+Para listar los elementos dentro del directorio actual en el que se encuentra el usuario en el CLI.
+
 ### ¿Para qué sirve el argumento -l junto al comando ls?
+
+Incluir -l al comando ls nos da mayor especificación del detalle de los elementos en el directorio presente, como fecha de modificación, tamaaño del archivo, usuario propietario del archivo, tipos de permisos.
+
 ### Usar el contenedor de jenkins creado previamente y ejecutar el comando ls con el argumento -l
 # COMPLETAR
 # COLOCAR UNA CAPTURA DE PANTALLA
+
+<img width="701" height="462" alt="image" src="https://github.com/user-attachments/assets/5e5bf98e-67a2-479c-93eb-a8a891702c90" />
+
 
 ### Para ejecutar un shell interactivo en un contenedor de Docker especificado.
 El comando **docker exec** te permite acceder a la sesión shell de un contenedor en ejecución, estarás dentro del contenedor y podrás ejecutar comandos como si estuvieras en una terminal normal. 
@@ -37,6 +46,7 @@ docker exec -i <nombre contenedor> bash
 Mostrar el contenido del archivo /etc/shells, que contiene una lista de shells válidos en el sistema.
 
 docker exec -it jenkins cat /etc/shells
+<img width="1404" height="241" alt="image" src="https://github.com/user-attachments/assets/c39796b9-bd2e-47ba-8791-56ac2d2ba00d" />
 
 
 Ejecutar
@@ -49,6 +59,9 @@ Ejecutar
 whoami
 ```
 # COLOCAR UNA CAPTURA DE PANTALLA
+
+<img width="593" height="137" alt="image" src="https://github.com/user-attachments/assets/460ed87d-d35a-4e97-9be1-63f4e011d85b" />
+
 
 **Si se visualiza el mensaje command not found, considerar**
 El problema se debe a que no se ha asignado un terminal de salida al contenedor al ejecutar el comando. Cuando usas docker exec -i jenkins-server /bin/bash en Windows, el comando se ejecuta pero no hay un terminal asignado para mostrar la salida del comando.
@@ -72,6 +85,10 @@ docker exec -it <nombre contenedor> <programa o comando>
 
 ### Colocar una captura de pantalla de la ventana que aparece después de colocar la contraseña.
 
+
+<img width="1903" height="963" alt="image" src="https://github.com/user-attachments/assets/6d75c723-6bdb-4859-8660-cf40a91a8360" />
+
+
 **Para este punto no es necesario continuar con la instalación de Jenkins**
 
 
@@ -81,4 +98,5 @@ docker exec -it <nombre contenedor> <programa o comando>
 docker logs -n <cantidad de líneas> <nombre o id del contenedor> 
 ```
 -t: para incluir la fecha y la hora
+<img width="1428" height="181" alt="image" src="https://github.com/user-attachments/assets/a3c9ab44-a3ce-4ac4-a502-99b6ac7c6d49" />
 
