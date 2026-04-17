@@ -1,6 +1,7 @@
 # Imagen
 ### Descargar imagen
 Descarga la última versión de la imagen disponible en el registro de Docker.
+<img width="1161" height="684" alt="image" src="https://github.com/user-attachments/assets/95bee7d2-a82e-4f81-bd69-97c070a20fe2" />
 
 ```
 docker pull <nombre imagen> 
